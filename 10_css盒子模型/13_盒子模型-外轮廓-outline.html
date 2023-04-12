@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        padding: 20px;
+        border: 10px solid orange;
+
+        outline: 30px solid #0f0;
+      }
+
+      /* 行内级元素设置margin-top无效 */
+      a {
+        display: inline-block;
+        margin-top: 100px;
+
+        outline: none;
+      }
+
+      /* 
+      a:focus {
+        outline: none;
+      } */
+
+      input {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <a href="#">百度一下</a>
+    <input type="text" />
+  </body>
+</html>
