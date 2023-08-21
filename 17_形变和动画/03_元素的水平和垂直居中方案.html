@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 方案一 */
+      .container1 {
+        position: relative;
+        height: 300px;
+        background-color: orange;
+      }
+      .box1 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background-color: #f00;
+      }
+
+      /* 方案二 */
+      .container2 {
+        height: 300px;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+      }
+      .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: #f00;
+      }
+
+      /* 方案三 */
+      .container3 {
+        height: 300px;
+        background-color: purple;
+      }
+      .box3 {
+        height: 100px;
+        width: 100px;
+        background-color: #f00;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    水平居中：
+      1.行内元素：
+        设置父元素的text-align: center
+      2.块级元素：
+        设置当前元素的 margin: 0 auto
+      3.绝对定位
+        元素有宽度的情况下: left0/right0/margin: 0 auto
+      4.flex
+        justify-content: center
+   -->
+
+    <!-- 
+      垂直居中：
+        1.绝对定位
+          元素有高度的情况下： top0/bottom0/margin:auto 0
+          弊端：
+            1> 必须使用定位(脱离标准流)
+            2> 元素必须设置高度
+     -->
+    <div class="container1">
+      <div class="box1"></div>
+    </div>
+
+    <!-- 
+      垂直居中
+        2.flex布局
+          弊端：当前flex布局中所有的元素都会被垂直居中
+     -->
+    <!-- <div class="container2">
+      <div class="box2"></div>
+    </div> -->
+
+    <!-- 
+      垂直居中
+        3.top+translate
+          1.让元素向下位移父元素的50%
+          2.让元素向上位移自身的50%
+     -->
+    <div class="container3">
+      <div class="box3">aaa</div>
+    </div>
+  </body>
+</html>

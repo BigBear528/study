@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        padding-top: 200px;
+      }
+      .container {
+        display: inline-block;
+        border: 10px solid red;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        /* border: 10px solid #00f; */
+
+        /* 形变 */
+        transform: scale(0.6, 0.6);
+      }
+      /* 手指放上去放大 */
+      .box:hover {
+        transform: scale(0.8);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      123
+    </div>
+  </body>
+</html>
