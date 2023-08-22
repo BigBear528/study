@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: orange;
+
+        /* 执行moveAnim动画 */
+        animation-delay: 2s;
+        animation-name: moveAnim;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        /* 动画迭代次数  infinite: 无限循环*/
+        /* animation-iteration-count: 3; */
+        /* 动画执行方向 */
+        /* animation-direction: reverse; */
+        /* 动画停留位置 none: 默认值 回到原点，forwards: 结束位置, backwards: 回到第一帧 */
+        /* animation-fill-mode: backwards; */
+        /* 动画状态,一般通过js修改 paused: 暂停,running: 继续 */
+        /* animation-play-state: paused; */
+
+        /* animation简写属性 */
+        animation: moveAnim 3s;
+      }
+
+      @keyframes moveAnim {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        33% {
+          transform: translate(0, 200px);
+        }
+
+        66% {
+          transform: translate(300px, 200px);
+        }
+
+        100% {
+          transform: translate(300px, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
