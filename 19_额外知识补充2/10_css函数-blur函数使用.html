@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: orange;
+      }
+
+      .image:hover {
+        filter: blur(3px);
+      }
+
+      .box {
+        display: inline-block;
+        position: relative;
+      }
+      .cover {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(3px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- filter -->
+    <img src="../images/xiaomi.webp" class="image" alt="" />
+
+    <div class="box">
+      <img src="../images/xiaomi.webp" alt="" />
+      <div class="cover"></div>
+    </div>
+  </body>
+</html>
