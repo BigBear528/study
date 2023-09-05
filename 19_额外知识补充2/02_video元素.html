@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 基本使用 -->
+    <video
+      src="../assets/video.mp4"
+      width="300px"
+      controls
+      autoplay
+      muted
+    ></video>
+
+    <!-- 兼容性写法 -->
+    <video src="../assets/video.mp4" controls>
+      <source src="../assets/video.ogg" />
+      <source src="../assets/video.webm" />
+      <p>当前浏览器不支持视频播放</p>
+    </video>
+  </body>
+</html>
