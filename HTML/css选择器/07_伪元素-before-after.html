@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .before {
+        color: red;
+      }
+
+      .after {
+        color: blue;
+      }
+
+      /* 伪元素 */
+      .box2::before {
+        content: "321";
+        font-size: 30px;
+        color: pink;
+      }
+
+      .box2::after {
+        /* content: "222"; */
+        content: url(../images/hot.92a15c5e.svg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span class="before">123</span>
+      我是div元素
+      <span class="after">123</span>
+    </div>
+
+    <div class="box2">我是box2元素</div>
+  </body>
+</html>

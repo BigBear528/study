@@ -1,0 +1,44 @@
+/* 
+.parent {
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+} */
+
+/* .child {
+  margin: 0 auto;
+} */
+
+/* .child {
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+} */
+
+/* .parent {
+  position: relative;
+}·
+
+.child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* .parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+} */
+
+/* .parent {
+  display: flex;
+  justify-content: center;
+} */

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    请输入名称: <input type="text" />
+
+    <script>
+      const inputEl = document.querySelector("input");
+
+      let counter = 0;
+      const inputChange = function (event) {
+        console.log(`第${++counter}次网络请求`);
+      };
+
+      // debounceInput = debounce(inputChange, 1500, true, (res) => {
+      //   console.log("resultCallback:", res);
+      // });
+
+      // debounceInput = debounce(inputChange, 1500, true);
+
+      inputEl.oninput = inputChange;
+    </script>
+  </body>
+</html>
